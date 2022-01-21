@@ -25,7 +25,7 @@ Environment:
     - Python 3.7
 
 Dependencies:
-    - import pandas as pd
+   - import pandas as pd
     - import numpy as np
     - import datetime as dt
     - import matplotlib
@@ -65,7 +65,7 @@ The analysis focuses on the temperature and rainfall from six different weather 
   -	3rd quartile 75% of all data is below 74 °F in December and 77 °F in June.
 
 <p align="center">
-<img src="PNG's/Dec_Temps.PNG" width="17%" height="17%"> <img src="PNG's/June_Temps.PNG" width="16%" height="16%">
+<img src="PNG's\Dec_Temps.PNG" width="17%" height="17%"> <img src="PNG's\June_Temps.PNG" width="16%" height="16%">
 </p>
 <p align="center">
 Measures of Central Tendency of Temperatures for December and June in Oahu, Hawaii. 
@@ -88,7 +88,8 @@ Measures of Central Tendency of Temperatures for December and June in Oahu, Hawa
   -	3rd quartile 75% of all data is below 0.15 inches in December and 0.12 inches in June.
 
 <p align="center">
-<img src="PNG's/Dec_Prcp.PNG" width="16%" height="16%"> <img src="PNG's/June_Prcp.PNG" width="16.3%" height="16.3%">
+<img src="PNG's\Dec_Prcp.PNG" width="16%" height="16%"></p> 
+<p><img src="PNG's\June_Prcp.PNG" width="16.3%" height="16.3%">
 </p>
 <p align="center">
 Measures of Central Tendency of Precipitation for December and June in Oahu, Hawaii. 
@@ -120,7 +121,7 @@ Function `calc_temps` that will accept start date and end date in the format '%Y
 To see the difference year to year I have provided another graph of **average precipitation grouped by year**. 
 
 <p align="center">
-<img src="PNG's/Yearly Tobs(2010-2017).png" width="45%" height="45%"> 
+<img src="PNG's\Yearly Tobs(2010-2017).png" width="45%" height="45%"> 
 </p>
 <p align="center">
 Average Temperatures in between year 2010 and year 2017 in Oahu, Hawaii. 
