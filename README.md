@@ -11,9 +11,9 @@ To ensure that we will choose the right spot for shop, we want to make some data
 
 
 ## Requirements
-   - Temperature analysis for June and December from 2010 to 2017.
-   - Precipitation(Rainfall) analysis for June and December from 2010 to 2017.
 
+   - Temperature analysis for June and December from 2010 to 2017.
+  
 
 ## Resources 
 
@@ -71,6 +71,9 @@ The analysis focuses on the temperature and rainfall from six different weather 
 </p>
 
 #
+
+## In addition Precipitation(Rainfall) analysis for June and December from 2010 to 2017.
+
 ### Comparison of the Precipitation for June and December
 
 **1. Total Number of data**
@@ -95,7 +98,7 @@ The analysis focuses on the temperature and rainfall from six different weather 
 </p>
 
 
-## Summary 
+## Summary
 Above descriptive statistics provides quick results and tell us weather story about the area.
 For more explanations some additional analysis is provided by me. 
 
