@@ -11,38 +11,37 @@ To ensure that we will choose the right spot for shop, we want to make some data
 
 
 ## Requirements
-
-    - Temperature analysis for June and December from 2010 to 2017.
-    - Precipitation(Rainfall) analysis for June and December from 2010 to 2017.
+   - Temperature analysis for June and December from 2010 to 2017.
+   - Precipitation(Rainfall) analysis for June and December from 2010 to 2017.
 
 
 ## Resources 
 
-Data Source:
+**Data Source:**
     - [hawaii.sqlite](hawaii.sqlite)
 
-Environment:
+**Environment:**
     - Python 3.7
 
-Dependencies:
+**Dependencies:**
    - import pandas as pd
-    - import numpy as np
-    - import datetime as dt
-    - import matplotlib
-    - from matplotlib import style
-    - style.use('fivethirtyeight')
-    - import matplotlib.pyplot as plt
+   - import numpy as np
+   - import datetime as dt
+   - import matplotlib
+   - from matplotlib import style
+   - style.use('fivethirtyeight')
+   - import matplotlib.pyplot as plt
     
-Python SQL toolkit and Object Relational Mapper:
-    - import sqlalchemy
-    - from sqlalchemy.ext.automap import automap_base
-    - from sqlalchemy.orm import Session
-    - from sqlalchemy import create_engine, func
+**Python SQL toolkit and Object Relational Mapper:**
+   - import sqlalchemy
+   - from sqlalchemy.ext.automap import automap_base
+   - from sqlalchemy.orm import Session
+   - from sqlalchemy import create_engine, func
 
-Software:
-    - Jupyter Notebook
-    - SQLite("A popular database engine, a version of SQL, that is stored locally and supports quick testing and easy prototyping")
-    - SQLAlchemy("A query tool design for SQLite to query SQLite databases")
+**Software:**
+   - Jupyter Notebook
+   - SQLite("A popular database engine, a version of SQL, that is stored locally and supports quick testing and easy prototyping")
+   - SQLAlchemy("A query tool design for SQLite to query SQLite databases")
 
 ## Result
 
@@ -65,12 +64,13 @@ The analysis focuses on the temperature and rainfall from six different weather 
   -	3rd quartile 75% of all data is below 74 °F in December and 77 °F in June.
 
 <p align="center">
-<img src="PNG's\Dec_Temps.PNG" width="17%" height="17%"> <img src="PNG's\June_Temps.PNG" width="16%" height="16%">
-</p>
+<img src= "PNG's\December_Temps.png" width="20%" height="20%"><img src= "PNG's\June_Temps.png" width="16.5%" height="16.5%">
+</P>
 <p align="center">
-Measures of Central Tendency of Temperatures for December and June in Oahu, Hawaii. 
+    <i>Measures of Central Tendency of Temperatures for December and June in Oahu, Hawaii. </i>
 </p>
 
+#
 ### Comparison of the Precipitation for June and December
 
 **1. Total Number of data**
@@ -88,12 +88,12 @@ Measures of Central Tendency of Temperatures for December and June in Oahu, Hawa
   -	3rd quartile 75% of all data is below 0.15 inches in December and 0.12 inches in June.
 
 <p align="center">
-<img src="PNG's\Dec_Prcp.PNG" width="16%" height="16%"></p> 
-<p><img src="PNG's\June_Prcp.PNG" width="16.3%" height="16.3%">
+<img src="PNG's\Dec_Prcp.png" width="20%" height="20%"><img src="PNG's\June_Prcp.png" width="19.8%" height="19.8%">
 </p>
 <p align="center">
-Measures of Central Tendency of Precipitation for December and June in Oahu, Hawaii. 
+    <i>Measures of Central Tendency of Precipitation for December and June in Oahu, Hawaii.</i> 
 </p>
+
 
 ## Summary 
 Above descriptive statistics provides quick results and tell us weather story about the area.
@@ -101,48 +101,47 @@ For more explanations some additional analysis is provided by me.
 
 ### Temperatures for June and December 
 
-From the temperature report we can see that there is not much difference in the weather in June and December, indicating mild and steady temperatures year-round. Mean and median – also known as 2nd quartile - are closely together, meaning that distribution of the data is not spread out. To find out protentional outliers and other trends **the box and whiskers chart** can tell us more about that.
+From the temperature report we can see that there is not much difference in the weather in June and December, indicating mild and steady temperatures year-round. Mean, median and 2nd quartile data are closely together. It means that distribution of the data is not spread out. For information about protentional outliers and other trends we will plot **the box and whiskers chart**.
 
 <p align="center">
 <img src="PNG's\Temp_data(2010-2017).png" width="40%" height="40%"> 
 </p>
 <p align="center">
-Box and Whiskers Plot of Temperatures for December and June in Oahu, Hawaii. 
+<i>Box and Whiskers Plot of Temperatures for December and June in Oahu, Hawaii.</i> 
 </p>
 
 From the graph we can see that there are just a few outliers. There are more outliers below the lower boundary in December, however the minimum temperature is 56 °F. 
 
 
-
+#
 ### Calc Funcion 
 Function `calc_temps` that will accept start date and end date in the format '%Y-%m-%d' and return the minimum, average, and maximum temperatures for that range of dates`'2010-01-01'- '2017-30-12'`
-
-### Design a query to retrieve the months of tobs data and plot the results. 
-To see the difference year to year I have provided another graph of **average precipitation grouped by year**. 
+#
+### Design a query to retrieve the of Average tobs data and plot the results.  
+To see the difference year to year I have provided another graph of **Average temprature grouped by year**. 
 
 <p align="center">
 <img src="PNG's\Yearly Tobs(2010-2017).png" width="45%" height="45%"> 
 </p>
 <p align="center">
-Average Temperatures in between year 2010 and year 2017 in Oahu, Hawaii. 
+<i>Average Temperatures in between year 2010 and year 2017 in Oahu, Hawaii. </i>
 </p>
 
-
+#
 ### Precipitation for June and December
 
 The first difference that we notice is the max prcp in June and December (4.43 and 6.42 inches respectively) and in both cases, which is highly above the mean. 
-And standard deviation is also high, mean, and median or 2nd quartile are far apart. It means that distribution of the data is highly spread out.
-It indicates the presence of extreme values in the dataset. The easiest way to determine outliers is to plot **box and whiskers chart**.
+Standard deviation is also high. And mean, median or 2nd quartile are far apart. Here we understood distribution of the data is highly spread out and indicates the presence of extreme values in the dataset. The easiest way to determine outliers is to plot **box and whiskers chart**.
 
 <p align="center">
-<img src="PNG's\Precipitation Data (2010 - 2017)" width="40%" height="40%"> 
+<img src= "PNG's\Precipitation Data (2010-2017).png" width="40%" height="40%"> 
 </p>
 <p align="center">
-Box and Whiskers Plot of Precipitation for December and June in Oahu, Hawaii. 
+    <i>Box and Whiskers Plot of Precipitation for December and June in Oahu, Hawaii. </i>
 </p>
 
-There are 183 outliers in June and 205 outliers in December. 
-It is enough power to impact the mean, yet 183 and 205 data points out of 1574 and 1405 respectively is not that much. 
-That indicates isolated extreme rainfall as in precipitation. 
-This analysis capture weather data for 7 years from 2010 to 2017.
+- There are 183 outliers in June and 205 outliers in December. 
+- It is enough power to impact the mean, yet 183 and 205 data points out of 1574 and 1405 respectively is not that much. 
+- That indicates isolated extreme rainfall as in precipitation. 
+- This analysis capture weather data for 7 years from 2010 to 2017.
 
